@@ -126,6 +126,29 @@ DNS Zone Transfer is a feature of the Domain Name System (DNS) protocol that all
 
 Cloud checkers is a term that refers to tools that check the security configuration of a cloud, usually to identify vulnerabilities or configuration errors that could affect the security of data stored in the cloud. These tools can scan the security configuration of a cloud such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP) and provide detailed reports on any identified security issues.
 
-#### ...
+>___
 
 ## HOSTS
+
+#### CDN checker:
+
+CDN checker is a tool that helps you check whether a given website is using a content delivery network (CDN) and, if so, which CDN is being used. This usually works by checking the website's HTTP header and examining the response to HTTP requests ...Some CDN checkers also provide additional information, such as the site's loading speed and the geographic location of the CDN servers.
+
+* [Ipcdn](https://github.com/six2dez/ipcdn) checks which CDN providers an IP list belongs to. This tool is based on the CIDR ranges collected by ProjectDiscovery in their [cdncheck](https://github.com/projectdiscovery/cdncheck) project.
+
+
+####  WAF checker:
+
+* [Wafw00f](https://github.com/EnableSecurity/wafw00f) Sends a normal HTTP request and analyses the response; this identifies several WAF solutions. If that is not successful, it sends several (potentially malicious) HTTP requests and uses simple logic to deduce which WAF it is. If that is also not successful, it analyses the responses previously returned and uses another simple algorithm to guess if a WAF or security solution is actively responding to the attacks.
+
+
+#### Port Scanner:
+
+* Nmap
+
+* [Smap](https://github.com/s0md3v/Smap) is a port scanner built with shodan.io's free API. It takes the same command line arguments as Nmap and produces the same output which makes it a drop-in replacement for Nmap.
+
+* Port services vulnerability checks: Port Services Vulnerability Checks are security checks that aim to identify possible vulnerabilities in services running on specific ports on a remote host. [searchsploit](https://github.com/offensive-security/exploitdb) is a command line search tool that also allows you to take a copy of Exploit Database (an archive of exploits for public security) with you, everywhere you go.
+
+* [Brutespray](https://github.com/x90skysn3k/brutespray) takes Nmap GNMAP/XML output, newline separated JSON, Nexpose XML Export output, or Nessus .nessus exports and automatically brute-forces services with default credentials using Medusa. BruteSpray finds non-standard ports, make sure to use -sV with Nmap.
+
