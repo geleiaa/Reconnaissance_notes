@@ -130,19 +130,19 @@ Cloud checkers is a term that refers to tools that check the security configurat
 
 ## HOSTS
 
-#### CDN checker:
+> #### CDN checker:
 
 CDN checker is a tool that helps you check whether a given website is using a content delivery network (CDN) and, if so, which CDN is being used. This usually works by checking the website's HTTP header and examining the response to HTTP requests ...Some CDN checkers also provide additional information, such as the site's loading speed and the geographic location of the CDN servers.
 
 * [Ipcdn](https://github.com/six2dez/ipcdn) checks which CDN providers an IP list belongs to. This tool is based on the CIDR ranges collected by ProjectDiscovery in their [cdncheck](https://github.com/projectdiscovery/cdncheck) project.
 
 
-####  WAF checker:
+> ####  WAF checker:
 
 * [Wafw00f](https://github.com/EnableSecurity/wafw00f) Sends a normal HTTP request and analyses the response; this identifies several WAF solutions. If that is not successful, it sends several (potentially malicious) HTTP requests and uses simple logic to deduce which WAF it is. If that is also not successful, it analyses the responses previously returned and uses another simple algorithm to guess if a WAF or security solution is actively responding to the attacks.
 
 
-#### Port Scanner:
+> #### Port Scanner:
 
 * Nmap
 
@@ -151,4 +151,157 @@ CDN checker is a tool that helps you check whether a given website is using a co
 * Port services vulnerability checks: Port Services Vulnerability Checks are security checks that aim to identify possible vulnerabilities in services running on specific ports on a remote host. [searchsploit](https://github.com/offensive-security/exploitdb) is a command line search tool that also allows you to take a copy of Exploit Database (an archive of exploits for public security) with you, everywhere you go.
 
 * [Brutespray](https://github.com/x90skysn3k/brutespray) takes Nmap GNMAP/XML output, newline separated JSON, Nexpose XML Export output, or Nessus .nessus exports and automatically brute-forces services with default credentials using Medusa. BruteSpray finds non-standard ports, make sure to use -sV with Nmap.
+
+>___
+
+## WEB
+
+> #### Web Prober:
+
+"Web Prober" is a system used to test the availability and performance of servers or websites. This tools usually send requests to a specific URL address and measure response time, download speed, and other parameters related to website performance. 
+
+* [Httpx](https://github.com/projectdiscovery/httpx)
+
+* [Unimap](https://github.com/Edu4rdSHL/unimap)
+
+
+> #### Web screenshotting:
+
+"Web screenshotting" is the process of capturing an image or "screenshot" of a web page. This is done to capture a visual representation of the page's content at a specific point in time.
+
+* [Webscreenshot](https://github.com/maaaaz/webscreenshot) simple script to screenshot a list of websites, based on the UrlPhantomJS script.
+
+* [Gowitness](https://github.com/sensepost/gowitness) is a website screenshot utility written in Golang, that uses Chrome Headless to generate screenshots...
+
+> #### Web templates scanner:
+
+A "web vulnerability scan" is a process of systematically checking a website or web application for security weaknesses, or "vulnerabilities."
+
+* [nuclei](https://github.com/projectdiscovery/nuclei) and templates [nuclei geeknik](https://github.com/geeknik/the-nuclei-templates.git)
+
+
+> #### CMS Scanner:
+
+* [CMSeeK](https://github.com/Tuhinshubhra/CMSeeK) CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and over 180 other CMSs.
+
+
+> #### Url extraction:
+
+URL extraction is the process of extracting Uniform Resource Locators (URLs) or web addresses from a text or a web page. The extracted URLs can be used for various purposes, such as building a list of links for web scraping or data mining, analyzing website links and their structure, or creating a sitemap for a website.
+
+* [Waybackurls](https://github.com/tomnomnom/waybackurls) fetches all the URLs that the Wayback Machine knows about for a domain.
+
+* [Gau](https://github.com/lc/gau) fetches known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
+
+* [Gospider](https://github.com/jaeles-project/gospider)
+
+* [JSA](https://github.com/w9w/JSA) (Javascript security analysis) is a program for javascript analysis during web application security assessment.
+
+
+> #### URL patterns Search and filtering:
+
+URL pattern search and filtering refer to the process of identifying and selecting specific URLs that match certain criteria or patterns. This process is often used to identify specific pages or sections of a website, to find pages with specific types of content, or to filter out URLs that are not relevant to a particular task or research project.
+
+* [Urless](https://github.com/xnl-h4ck3r/urless) is a tool used to declutter a list of URLs.
+
+* [Gf](https://github.com/tomnomnom/gf) is a wrapper around grep, to help you search for patterns using JSON files to define them. [Gf-patterns](https://github.com/1ndianl33t/Gf-Patterns) is a repository of patterns to use with GF to find things like XSS, SSRF, RCE, LFI, SQLI, SSTI, IDOR, URL Redirection, and others.
+
+
+> #### Favicon Real IP:
+
+* [Fav-up](https://github.com/pielco11/fav-up) lookups for real IP starting from the favicon icon and using Shodan.
+
+> #### Javascript analysis:
+
+* [Subjs](https://github.com/lc/subjs) fetches javascript files from a list of URLs or subdomains. Analyzing javascript files can help you find undocumented endpoints, secrets, and more.
+
+* [JSA](https://github.com/w9w/JSA) (Javascript security analysis)
+
+* [XnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder) is a python tool used to discover endpoints (and potential parameters) for a given target and [Getjswords](https://github.com/m4ll0k/BBTz) extract words that are located in javascript sources.
+
+> #### Fuzzing
+
+* [ffuf](https://github.com/ffuf/ffuf)
+
+> #### Passwords dictionary creation:
+
+* [Pydictor](https://github.com/LandGrey/pydictor) is a powerful and useful hacker dictionary builder for brute-force attacks.
+
+
+## VULNERABILITY CHECKS:
+
+> #### XSS:
+
+* [Dalfox](https://github.com/hahwul/dalfox) is a powerful open-source XSS scanning tool and parameter analyzer and utility that fast the process of detecting and verifying XSS flaws.
+
+> #### Open Redirect: 
+
+* [Oralyzer](https://github.com/r0075h3ll/Oralyzer) is a simple python script that probes for Open Redirection vulnerabilities in a website. It does that by fuzzing the URL that is provided in the input.
+
+> #### Server Side Request Forgery:
+
+* Headers [Interactsh](https://github.com/projectdiscovery/interactsh) is a tool designed to detect vulnerabilities that cause external interactions and param values with [ffuf](https://github.com/ffuf/ffuf) explained before in the "web segment" and "fuzzing" item.
+
+> ####  Carriage Return Line Feed (CRLF):
+
+* [crlfuzz](https://github.com/dwisiswant0/crlfuzz) is a fast tool to scan CRLF vulnerabilities written in Go.
+
+
+> #### Cross Oring Resource Sharing (CORS):
+
+* [Corsy](https://github.com/s0md3v/Corsy) is a lightweight program that scans for all known misconfigurations in CORS implementations.
+
+
+> #### Local File Include (LFI):
+
+* [ffuf](https://github.com/ffuf/ffuf)
+
+
+> #### SQL Injection:
+
+* [SQLMap](https://github.com/sqlmapproject/sqlmap)
+
+> #### Server Side Template Injection (SSTI):
+
+* [ffuf](https://github.com/ffuf/ffuf)
+
+> #### SSL tests (testssl)
+
+SSL (Secure Sockets Layer) tests are security evaluations of a web application's SSL/TLS (Transport Layer Security) implementation. The purpose of these tests is to identify potential vulnerabilities in the SSL/TLS configuration that attackers could exploit.
+
+Some common types of SSL tests include: 
+
+* SSL Protocol Testing: This type of test checks for the use of secure SSL/TLS protocols and ensures that the web application is using up-to-date protocols that are not vulnerable to known attacks.  
+
+* Cipher Suite Testing: This type of test checks for the use of secure cipher suites that use strong encryption algorithms to protect sensitive information.
+
+* Certificate Validation Testing: This type of test checks the web application's SSL certificate to ensure that it is valid, properly configured, and trusted by web browsers.
+
+* SSL Configuration Testing: This type of test checks the web application's SSL/TLS configuration for any misconfigurations or insecure settings that could be exploited by attackers.
+
+* [Testssl](https://github.com/drwetter/testssl.sh) is a free command line tool that checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as some cryptographic flaws.
+
+
+> #### Broken Links:
+
+* [Gospider](https://github.com/jaeles-project/gospider)
+
+
+> #### Prototype Pollution: 
+
+* [Ppfuzz](https://github.com/dwisiswant0/ppfuzz) is a fast tool to scan client-side prototype pollution vulnerabilities written in Rust.
+
+
+> ####  Web Cache Vulnerabilities:
+
+* Web Cache Poisoning: This occurs when an attacker injects malicious content into the cache, causing the cache to serve the attacker's content instead of the intended content. This can be used to spread malware, phishing scams, or deface websites. 
+
+* Cache Side-Channel Attacks: These attacks use information obtained from the cache behavior to leak sensitive information, such as encryption keys or passwords.
+
+* Weak Authentication and Authorization: If authentication and authorization mechanisms are not properly configured, attackers may be able to bypass them and gain access to sensitive information stored in the cache.
+
+* Cross-Site Scripting (XSS): Cross-Site Scripting vulnerabilities can be exploited to inject malicious scripts into web pages that are saved in the cache, compromising the security of the cache and potentially exposing sensitive information to attackers.
+
+* [Web-Cache-Vulnerability-Scanner](https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner) is a tool that supports many different web cache poisoning techniques, includes a crawler to identify further URLs to test, and can adapt to a specific web cache for more efficient testing. It is highly customizable and can be easily integrated into existing CI/CD pipelines
+
 
