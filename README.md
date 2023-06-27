@@ -305,3 +305,11 @@ Some common types of SSL tests include:
 * [Web-Cache-Vulnerability-Scanner](https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner) is a tool that supports many different web cache poisoning techniques, includes a crawler to identify further URLs to test, and can adapt to a specific web cache for more efficient testing. It is highly customizable and can be easily integrated into existing CI/CD pipelines
 
 
+## ReconFTW
+
+This tool automates the entire process of reconnaissance for you. It outperforms the work of subdomain enumeration along with various vulnerability checks and obtaining maximum information about your target.
+
+[ReconFTW](https://github.com/six2dez/reconftw) uses a lot of techniques (passive, brute-force, permutations, certificate transparency, source code scraping, analytics, DNS records...) for subdomain enumeration which helps you get the maximum and the most interesting subdomains so that you can be ahead of the competition.
+
+It also performs various vulnerability checks like XSS, Open Redirects, SSRF, CRLF, LFI, SQLi, SSL tests, SSTI, DNS zone transfers, and much more. Along with these, it performs OSINT techniques, directory fuzzing, dorking, port scanning, screenshots, and nuclei scanning on your target.
+
