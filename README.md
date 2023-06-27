@@ -1,12 +1,112 @@
 
 ## Reconnaissance
 
-Essa lista de ferramentas e tecnicas foi tirada da serie de artigos do Lucas Carmo:
+Essa lista de ferramentas e tecnicas foi retirada da serie de artigos da HakaiOffSec:
 * https://labs.hakaioffsec.com/reconnaissance-like-a-cyber-scout-part-1/
 * https://labs.hakaioffsec.com/reconnaissance-like-a-cyber-scout-part-2/
-*
+* https://labs.hakaioffsec.com/reconnaissance-like-a-cyber-scout-part-3/
 
 Separei tudo aqui para poder ter uma consulta rapida.
+
+
+[OSINT](#osint )
+
+* [social-media](#information-gathering-through-search-enginessocial-media)
+
+* [pass-leaks](#password-leaks)
+
+* [meta-data finder](#metadata-finder-metafinder)
+
+* [google dorks](#google-dorks-dorks_hunter)
+
+* [github dorks](#github-dorks)
+
+* [github orgs](#github-org-analysis)
+
+[SUBDOMAIN-ENUM](#subdomain-enumeration)
+
+* [passive-enum](#passive-enum)
+
+* [cert-transparency](#certificate-transparency)
+
+* [NOERROR subdomain](#noerror-subdomain-discovery)
+
+* [dns-bruteforce](#dns-bruteforce)
+
+* [permutations](#permutations)
+
+* [scraping](#scrapingspideringcrawling)
+
+* [google-analitics](#google-analytics-analyticsrelationships)
+
+* [tls-ssl](#tls-or-ssl-handshake-tlsx-)
+
+* [recursive-search](#recursive-search)
+
+* [subdoamain-takeover](#subdomains-takeover)
+
+* [dns-zone-transfer](#dns-zone-transfer)
+
+* [cloud](#cloud-checkers)
+
+[HOSTS](#hosts)
+
+* [cdn-check](#cdn-checker)
+
+* [waf](#waf-checker)
+
+* [port-scan](#port-scanner)
+
+[WEB](#web)
+
+* [web-prober](#web-prober)
+
+* [web-screenshot](#web-screenshotting)
+
+* [template-scanner](#web-templates-scanner)
+
+* [cms](#cms-scanner)
+
+* [url-extraction](#url-extraction)
+
+* [url-params](#url-patterns-search-and-filtering)
+
+* [favicon](#favicon-real-ip)
+
+* [js-analysis](#javascript-analysis)
+
+* [fuzzing](#fuzzing)
+
+* [pass-dictionary](#passwords-dictionary-creation)
+
+[VULNS-CHECK](#vulnerability-checks)
+
+* [xss](#xss)
+
+* [open-redirect](#open-redirect)
+
+* [ssrf](#server-side-request-forgery-ssrf)
+
+* [crlf](#carriage-return-line-feed-crlf)
+
+* [cors](#cross-oring-resource-sharing-cors)
+
+* [lfi](#local-file-include-lfi)
+
+* [sqli](#sql-injection)
+
+* [ssti](#server-side-template-injection-ssti)
+
+* [testssl](#ssl-tests-testssl)
+
+* [broken-links](#broken-links)
+
+* [prototype-pollution](#prototype-pollution)
+
+* [web-cache](#web-cache-vulnerabilities)
+
+[RECONFTW](#reconftw)
+
 
 >___
 
@@ -75,7 +175,7 @@ NOERROR Subdomain Discovery is a discovery technique based on the DNS server's r
 * [Puredns](https://github.com/d3mondev/puredns) is a fast domain resolver and subdomain brute-forcing tool that can accurately filter out wildcard subdomains and DNS-poisoned entries.
 
 
-> ### Permutaions:
+> ### Permutations:
 
 Permutations are used in various fields, including cryptography, artificial intelligence, and algorithmic research, to test all possible combinations of input and find the best solution for a given problem. In our case, permutations are used in brute force tests, where we try to find a solution through trial and error of all possible combinations.
 
@@ -238,7 +338,7 @@ URL pattern search and filtering refer to the process of identifying and selecti
 
 * [Oralyzer](https://github.com/r0075h3ll/Oralyzer) is a simple python script that probes for Open Redirection vulnerabilities in a website. It does that by fuzzing the URL that is provided in the input.
 
-> #### Server Side Request Forgery:
+> #### Server Side Request Forgery (SSRF):
 
 * Headers [Interactsh](https://github.com/projectdiscovery/interactsh) is a tool designed to detect vulnerabilities that cause external interactions and param values with [ffuf](https://github.com/ffuf/ffuf) explained before in the "web segment" and "fuzzing" item.
 
