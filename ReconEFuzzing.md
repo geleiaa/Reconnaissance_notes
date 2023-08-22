@@ -1,12 +1,12 @@
 ## DNS
 
-A -> ipv4
-AAAA -> ipv6
-CNAME -> domains
-TXT -> notes/text
-MX -> email servers
-SOA -> domains validations
-NS -> authority servers
+- A -> ipv4
+- AAAA -> ipv6
+- CNAME -> domains
+- TXT -> notes/text
+- MX -> email servers
+- SOA -> domains validations
+- NS -> authority servers
 
 #### dig 
 
@@ -75,3 +75,10 @@ NS -> authority servers
 ``` $ wfuzz -c -w burp-parameter-name.txt http://domain/index.php?search=FUZZ ```
 
 
+## Automation 
+
+- https://github.com/KingOfBugbounty/DockerHunt
+
+- https://hub.docker.com/r/mswell/hacktools
+
+``` $ echo domains | gau | hakcheckurl | grep -v '404|999|403|500' ```
