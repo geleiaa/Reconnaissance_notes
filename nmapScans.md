@@ -1,8 +1,11 @@
 ## Fast network range/subnet scan (adapt flags)
 
 nmap -sS -Pn --host-timeout=1m --max-rtt-timeout=600ms /
+
 --initial-rtt-timeout=300ms --min-rtt-timeout=300ms /
+
 --stats-every 10s --top-ports 500 --min-rate 1000 /
+
 --max-retries 0 -n -T5 --min-hostgroup 255 -oA fast_scan_output -iL TARGET_NET
 
 This Nmap scan will enumerate the top 500 TCP ports, only sends the first half of the TCP handshake, and assumes all hosts are up. There is also a bit of fine-tuned timing, the -T5 takes care of all the base settings, and we drop the rtt-timeout down to 300ms, add a 1m host timeout, do not reattempt any ports, turn the minimum sending rate up to 1000, and scan 255 hosts at a time.
@@ -39,10 +42,14 @@ nmap -vv -n -sN -f -T paranoid TARGETIP
 
 #### spoofing IP and MAC + slow + frag + decoy
 
-nmap -vv -n -D RND:5 -f -T sneaky TARGETIP 
+nmap -vv -n -D RND:5 -f -T sneaky TARGETIP
+
 nmap -vv -n --spoof-mac 0 -f -T sneaky TARGETIP
+
 nmap -vv -n -Pn -f -S FAKEIP -e NETINFTERFACE -T paranoid TARGETIP
+
 nmap -vv -n -sF -f -D RND: 5 -T paranoid TARGETIP
+
 hping TARGETIP -a FAKEIP
 
 ### source-port + fragm + slow
