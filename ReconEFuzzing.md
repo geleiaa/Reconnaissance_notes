@@ -1,45 +1,4 @@
-# Parameter/Content/URL Discovery
-
-- ParamSpider
-- gf
-- Parht
-- kxss
-- gxss
-  
-- httpx
-- aquatone
-- SecretFinder
-
-- gau
-- hakrawler
-- wfuzz
-- ffuf
-- dirsearch
-
-``` $ cat domains.txt | httpx -status | gau ```
-
-``` $ cat domains.txt | httpx -status -ports 80,443,8080 -path /admin ``` 
-
-``` $ subfinder -d domain.com -silent | aquatone ``` 
-
-``` $ cat targets | ./feroxbuster --stdin --silent -s 200 301 302 --redirects -x js | fff -s 200 -o js-files ```
-
-``` $ arjun -u url ```
-
-https://github.com/s0md3v/Arjun
-
-``` $ echo domain | waybackurls | unfurl paths ```
-
-``` $ echo domain | waybackurls | unfurl keys ```
-
-``` $ echo domains | waybackurls | gf xss | hakcheckurl ```
-
-``` $ echo domains | subfinder -silent | httpx -silent | katana -silent -d 10 | unfurl keys | uro ```
-
-https://github.com/projectdiscovery/katana
-
-https://github.com/tomnomnom/unfurl
-
+## General Commands
 
 #### _xargs_ (carrega lista para uma tool)
  
@@ -115,28 +74,7 @@ https://github.com/RenwaX23/XSSTRON
  https://github.com/tomnomnom/qsreplace
  
  ``` $ waybackurls domain.com | grep -a -i \=http | qsreplace 'http://evil.com' | while read host do;do curl -s -L $host -I | grep "evil.com" && echo -e "$host \033[0;31mVulnerable\n" ;done ```
-
-## Git
-
-#### _cs.github_
  
- https://github.blog/2021-12-08-improving-github-code-search/
-
-#### Git dorker
-
-https://github.com/obheda12/GitDorker
-
-
-
-#### _git exposed_
-
- ``` $ echo domain.com | subfinder -silent | httpx -silent | anew file ```
- 
- ``` $ echo domain.com | subfinder -silent | xargs -I@ sh -c 'goop @ -f' ```
-
- https://github.com/arthaud/git-dumper
- 
- https://github.com/nyancrimew/goop
 
 ## PortScan
 
