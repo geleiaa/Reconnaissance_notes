@@ -18,6 +18,7 @@ all scans here are slow and should only be used for one host, if you use it to e
 #### Netcat scan
 
 nc -nvv -w 1 -z TARGETIP 1000-2000
+
 nc -nv -u -z -w 1 TARGETIP 160-162
 
 #### Slow Scan 
@@ -25,7 +26,9 @@ nc -nv -u -z -w 1 TARGETIP 160-162
 https://nmap.org/book/performance-timing-templates.html
 
 nmap -T paranoid or 0
+
 nmap -T sneaky or 1 
+
 nmap --scan-delay 10s
 
 #### FIN scan + slow + fragm
@@ -64,10 +67,13 @@ nmap -vv -n -Pn -g 53 --mtu 40  --randomize-hosts -T sneaky TARGETIP
 #### packets Manipulation
 
 nmap --data 0xdeadbeef
+
 nmap --data-string “my l33t skills”
+
 nping --icmp --icmp-type 3 --icmp-code 1 --source-ip IP --dest-ip IP --icmp-id 720 --icmp-seq 0 --data-string 'some text'
 
 #### random bytes
+
 nmap -vv -n -Pn --data-length 36 -f -S FAKEIP -e NETINFTERF -T paranoid TARGETIP
 
 #### TTL Manipulation
@@ -81,11 +87,15 @@ custom packets, traceroute + port scan, firewalk tool, inverse tpc flags(xmas, F
 
 #### Anonymize ?????
 Idle scan
+
 FTP bounce scan
+
 https://eller.arizona.edu/sites/default/files/rodney_rorhmann_sfs_masters_paper.pdf
+
 https://github.com/alkasir/alkasir
 
 proxy chain => proxy switcher, proxifier, proxy workbench, proxychains, some vps, vpn????
+
 https://0x00sec.org/t/whats-the-most-anonymous-active-scanning-technique/5678/6
 
 
