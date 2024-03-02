@@ -108,18 +108,24 @@ site:twitch.tv -www.twitch.tv
                -www.sub,twitch.tv -sub.twitch.tv
 
 https://github.com/m3n0sd0n4ld/GooFuzz
+
 https://github.com/darklotuskdb/sd-goo
 
 #### Google-Fu:
 Copyright text
+
 Terms of service text
+
 Privacy policy text
 
 #### Favicon analysis
+
 https://github.com/devanshbatham/FavFreak
 
 #### Sub Takeover
+
 https://github.com/EdOverflow/can-i-take-over-xyz
+
 https://github.com/Ice3man543/SubOver
 
 #### historical subdomain
