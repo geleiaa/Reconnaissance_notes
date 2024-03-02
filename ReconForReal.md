@@ -11,6 +11,8 @@ https://whois.arin.net/ui/query.do (us region)
 
 https://apps.db.ripe.net/db-web-ui/#/fulltextsearch
 
+https://www.whoxy.com/
+
 #### Find more principal domains (apex domains)
 
 https://github.com/expl0itable3/check_mdi/blob/main/check_mdi.py
@@ -46,6 +48,10 @@ http://kaeferjaeger.gay/ (cloud providers ips)
 https://github.com/hakluke/hakip2host
 
 ```$ prips 173.0.84.0/24 | ./hakip2host```
+
+#### sub enum
+
+https://github.com/nsonaniya2010/SubDomainizer (sub, cloud, js)
 
 
 ## Shodan
@@ -98,6 +104,24 @@ https://github.com/gwen001
 
 #### subdomain scraping (google, github, cloud ranges)
 
+site:twitch.tv -www.twitch.tv
+               -www.sub,twitch.tv -sub.twitch.tv
+
+https://github.com/m3n0sd0n4ld/GooFuzz
+https://github.com/darklotuskdb/sd-goo
+
+#### Google-Fu:
+Copyright text
+Terms of service text
+Privacy policy text
+
+#### Favicon analysis
+https://github.com/devanshbatham/FavFreak
+
+#### Sub Takeover
+https://github.com/EdOverflow/can-i-take-over-xyz
+https://github.com/Ice3man543/SubOver
+
 #### historical subdomain
 
 - securitytrails.com
@@ -129,6 +153,13 @@ parse bbot output:
 - subbrute
 - amass
 
+#### After sub enum
+after subdomain enum verify if domains is active/online
+
+and
+
+screeshotting: analysis all screeshot and priorize domains to test (eyewitness, aquatone, httpscreenshot)
+
 
 ## Pré-Manual Testing and Automation
 
@@ -153,7 +184,11 @@ parse bbot output:
 - Intrigue Core (jcran)
 - Vulners (Burp ext)
 - Jaeles Scanner (j3ssi3jjj)
-- retire.js 
+- retire.js
+
+#### Service Scanning
+
+https://github.com/x90skysn3k/brutespray
 
 #### Port Scan
 
