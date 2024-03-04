@@ -55,7 +55,7 @@ https://attack.mitre.org/techniques/T1594/
 
 ### 6 - Search Closed Sources
 
-Treat Intel Vendors
+Threat Intel Vendors
 - https://d3security.com/blog/10-of-the-best-open-source-threat-intelligence-feeds/
 - https://blog.google/threat-analysis-group/exposing-initial-access-broker-ties-conti/
 
