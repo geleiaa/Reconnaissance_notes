@@ -1,5 +1,7 @@
 
-notes of ![@jhaddix](https://twitter.com/Jhaddix) lives
+notes of [@jhaddix](https://twitter.com/Jhaddix) lives
+
+https://book.hacktricks.xyz/generic-methodologies-and-resources/external-recon-methodology
 
 ![path](https://github.com/geleiaa/Reconnaissance_notes/blob/main/imgs/path.png)
 
