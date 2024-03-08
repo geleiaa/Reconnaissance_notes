@@ -126,6 +126,10 @@ https://nmap.org/book/toc.html
 
 https://nmap.org/book/firewall-subversion.html
 
+https://github.com/Ignitetechnologies/Nmap-For-Pentester
+
+https://www.packtpub.com/product/nmap-network-exploration-and-security-auditing-cookbook-third-edition/9781838649357
+
 https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-network/ids-evasion
 
 https://github.com/jesusgavancho/TryHackMe_and_HackTheBox/blob/master/Firewalls.md
