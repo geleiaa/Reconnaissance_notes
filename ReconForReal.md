@@ -15,6 +15,8 @@ https://apps.db.ripe.net/db-web-ui/#/fulltextsearch
 
 https://www.whoxy.com/
 
+https://centralops.net/co/
+
 #### Find more principal domains (apex domains)
 
 https://github.com/expl0itable3/check_mdi/blob/main/check_mdi.py
@@ -29,11 +31,21 @@ https://github.com/expl0itable3/check_mdi/blob/main/check_mdi.py
 
 ## Recon in Cloud based infra
 
+cloud ips
+
+Amazon: http://bit.ly/2vUSjED
+
+Azure: http://bit.ly/2r7rHeR
+
+Google Cloud: http://bit.ly/2HAsZFm
+
 #### cert transparecy in cloud ips
 
 https://github.com/UnaPibaGeek/ctfr 
 
 https://github.com/g0ldencybersec/cloudrecon (cert transparecy in cloud domains)
+
+https://github.com/cheetz/sslScrape
 
 parse cloudrecon tool data collected:
 ```$ grep -F '.DOMAIN.COM' domainfile_DB.txt | awk -F '[][]''{print $2}' | sed 's##\n#g' "DOMAIN.COM" | sort -fu | cut -d ',' -f1 | sort -u```
@@ -103,6 +115,10 @@ https://github.com/gwen001
 
 
 ## SubDomain enum
+
+#### general enum
+
+https://github.com/leebaird/discover
 
 #### subdomain scraping (google, github, cloud ranges)
 
