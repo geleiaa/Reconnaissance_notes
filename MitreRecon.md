@@ -43,7 +43,7 @@ https://attack.mitre.org/techniques/T1596/
 - some whois
 - passive dns - https://dnsdumpster.com/
 - digital certs - https://www.sslshopper.com/ssl-checker.html
-- CDNs
+- CDNs - https://github.com/projectdiscovery/cdncheck
 - shodan and others...
 
 
